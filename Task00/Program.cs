@@ -1,8 +1,7 @@
 ﻿//0. Вывести квадрат числа
  
 
-double a;
-string s = Console.ReadLine();
-a = Convert.ToInt32(s);
-//Console.WriteLine(Math.Pow(args, 2));
-Console.WriteLine(Math.Pow(a, 2));
+Console.Write("Введите число - ");
+double a = Convert.ToDouble(Console.ReadLine());
+a = Math.Pow(a, 2);
+Console.Write("Квадрат числа равен - "+a);

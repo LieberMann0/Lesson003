@@ -15,7 +15,7 @@ b = Convert.ToInt32(s);
 
 string ans = " ";
 
-b = b * b;
+b = b ^ 2;
 if (a == b) ans = "Да";
 else ans = "Нет";
 
