@@ -1,22 +1,16 @@
 ﻿//По двум заданным числам проверять является ли первое квадратом второго
 
 
-double a;
-double b;
-string s;
-
 Console.Write("Введите первое число:  ");
-s = Console.ReadLine();
-a = Convert.ToInt32(s);
+double a = Convert.ToDouble(Console.ReadLine());
 
 Console.Write("Введите второе число:  ");
-s = Console.ReadLine();
-b = Convert.ToInt32(s);
+double b = Convert.ToDouble(Console.ReadLine());
 
 string ans = " ";
 
-b = b ^ 2;
+b = Math.Pow(b, 2);
 if (a == b) ans = "Да";
 else ans = "Нет";
 
-Console.Write("Является первое число квадратом второго? - "+ans);
+Console.Write("Является ли первое число квадратом второго? - "+ans);
