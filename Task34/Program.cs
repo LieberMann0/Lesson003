@@ -14,7 +14,7 @@ Console.WriteLine();
 int j = 0;
 int temp = 0;
 
-for (int i = 0; i < (ind / 2); i++)
+for (int i = 0; i < (ind / 2); i++;)
 {
     temp = arr[i];
     arr[i] = arr[(ind - 1) - j];

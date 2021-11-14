@@ -6,7 +6,7 @@ int[] array = new int [12];
 int sumPos;
 int sumNeg;
 
-for (int i = 0; i < array.Lenght; i++)
+for (int i = 0; i < array.Length; i++)
 {
     array[i] = new Random().Next(-9, 10);
     Console.WriteLine(array[i]);
