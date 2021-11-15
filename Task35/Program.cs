@@ -1,17 +1,17 @@
 ﻿// Определить, присутствует ли в заданном массиве, некоторое число 
 
-int SearchNum(int[] array, int a)
+string SearchNum(int[] array, int a)
 {
-    int result;
-    
+    string result = String.Empty;
+            
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] == a)
         {
-            result = Convert.ToInt32(Console.Write("Искомое число в заданном массиве присутствует."));
+            result = Console.Write($"Искомое число в заданном массиве присутствует.");
             break;
         }
-        else result = Convert.ToInt32(Console.Write("Искомого числа в заданном массиве нет."));
+        if (i == array.Length) result = Console.Write($"Искомого числа в заданном массиве нет.");
     }
     return result;
 }
@@ -29,6 +29,7 @@ Console.WriteLine();
 int num = new Random().Next(10, 101);
 
 Console.WriteLine("Найти число "+num);
+Console.WriteLine();
 
 SearchNum(arr, num);
 
