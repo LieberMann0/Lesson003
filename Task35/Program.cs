@@ -1,20 +1,23 @@
 ﻿// Определить, присутствует ли в заданном массиве, некоторое число 
 
-string SearchNum(int[] array, int a)
+void SearchNum(int[] array, int a)
 {
-    string result = String.Empty;
+    bool result = false;
+
             
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] == a)
         {
-            result = Console.Write($"Искомое число в заданном массиве присутствует.");
+            result = true;
+            //Console.Write($"Искомое число в заданном массиве присутствует.");
             break;
-        }
-        if (i == array.Length) result = Console.Write($"Искомого числа в заданном массиве нет.");
+        }                       
     }
-    return result;
-}
+    if (result == false) Console.Write($"Искомого числа в заданном массиве нет.");
+ }
+ 
+ 
 
 int[] arr = new int[new Random().Next(10, 21)];
 
