@@ -12,18 +12,16 @@ for (int i = 0; i < 10000; i++)
 }
 
 int c = 0;
-//int b = 0;
 int max = 0;
 
-for (int i = 0; i < 10000; i++)
+for (int i = 0; i < 9999; i++)
 {
     for (int j = i +1; j < 10000; j++)
     {
         int dif = (arr[j]) - (arr[i]);
         if (dif%80 == 0)
         {
-            c = ++c;
-            dif = (arr[j]) - (arr[i]);            
+            c = ++c;                        
             if (max < dif) max = dif;
         }        
     }    
