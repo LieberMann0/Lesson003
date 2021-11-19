@@ -19,7 +19,7 @@ int max = 0;
 
 for (int i = 0; i < 10000; i++)
 {
-    for (int j = i +1; j < 10000; j++)
+    for (int j = i + 1; j < 10000; j++)
     {
         int b = (arr[i]) * (arr[j]);
         if (b%26 == 0)
