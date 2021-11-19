@@ -8,16 +8,15 @@ int a = 1;
 for (int i = 0; i < 10000; i++)
 {
     arr[i] = a;
-    ++a;
+    ++a;    
 }
 
 int c = 0;
-//int b = 0;
 int max = 0;
 
 for (int i = 0; i < 10000; i++)
 {
-    for (int j = i; j < 10000; j++)
+    for (int j = i + 1; j < 10000; j++)
     {
         int dif = (arr[j]) - (arr[i]);
         if (dif%60 == 0)
