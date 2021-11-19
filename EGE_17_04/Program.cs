@@ -17,7 +17,7 @@ int max = 0;
 
 for (int i = 0; i < 10000; i++)
 {
-    for (int j = i; j < 10000; j++)
+    for (int j = i + 1; j < 10000; j++)
     {
         int sum = (arr[i]) + (arr[j]);
         if (sum%60 == 0)
